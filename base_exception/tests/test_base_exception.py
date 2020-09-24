@@ -7,12 +7,12 @@ from odoo import fields
 from .common import setup_test_model
 from .purchase_test import PurchaseTest, LineTest, ExceptionRule
 import logging
+from odoo.tests import tagged
 
 _logger = logging.getLogger(__name__)
 
 
-@common.at_install(False)
-@common.post_install(True)
+@tagged('post_install', '-at_install')
 class TestBaseException(common.SavepointCase):
     @classmethod
     def setUpClass(cls):
