@@ -4,7 +4,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
     "name": "Exception Rule",
-    "version": "14.0.0.0.1",
+    "version": "14.0.1.0.0",
     "category": "Generic Modules",
     "summary": """
     This module provide an abstract model to manage customizable
