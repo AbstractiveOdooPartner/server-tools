@@ -251,6 +251,9 @@ class BaseException(models.AbstractModel):
                         for e in rec.exception_ids
                     ]
                 )
+                continue
+            rec.exceptions_summary = None
+
 
     def _popup_exceptions(self):
         action = self._get_popup_action().read()[0]
